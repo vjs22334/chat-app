@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpClientModule} from '@angular/common/http';
 
 
 import { AppComponent } from './app.component';
@@ -26,8 +26,9 @@ import { JsLoaderService } from './js-loader.service';
   ],
   imports: [
     AppRoutingModule,
-    BrowserModule
-  ],
+    BrowserModule,
+    HttpClientModule
+    ],
   providers: [JsLoaderService],
   bootstrap: [AppComponent]
 })
